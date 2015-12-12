@@ -19,7 +19,10 @@
       "always"
     ]
   },
-  "globals": {},
+  "globals": {
+    "React": true,
+    "ReactDOM": true
+  },
   "env": {
     "es6": true,
     "node": true,

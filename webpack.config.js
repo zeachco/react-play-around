@@ -69,7 +69,7 @@ var loaders = [{
 module.exports = {
   resolve: {
     root: path.resolve('./app'),
-    extensions: ['', '.webpack.js', '.web.js', '.js']
+    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx']
   },
   context: __dirname + '/app',
   entry: path.resolve(__dirname, DIRS.app),

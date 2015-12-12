@@ -1,8 +1,17 @@
-console.log('app started');
+global.React = require('react');
+global.ReactDOM = require('react-dom');
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+var mainContainer = document.getElementById('react-main');
 
-ReactDOM.render( <h1>Hello, world!</h1>,
-  document.getElementById('mainRegion')
-);
+var title = require('components/title');
+var dropdown = require('components/dropdown');
+title.apply(mainContainer, ['test']);
+dropdown.apply(mainContainer, [
+  [
+    'choice 1',
+    'choice 2',
+    'choice 3',
+    'choice 4',
+    'choice 5'
+  ]
+]);
